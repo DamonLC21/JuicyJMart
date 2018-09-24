@@ -17,3 +17,9 @@ app.get('/', (req, res, next) =>    {
         res.json({data});
     })
 })
+app.get('/categories', (req, res, next)   =>  {
+    queries.listAllCategories().then((data) => {
+        res.json({data});
+    })
+})  
+

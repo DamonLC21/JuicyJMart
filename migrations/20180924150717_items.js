@@ -7,7 +7,8 @@ exports.up = function(knex, Promise) {
         item.integer('quantity');
         item.float('price');        
         item.string('image_URL');
-        item.integer('categoryID');
+        item.integer('categoryID').unsigned();
+        item.foreign('categoryID').references('categories.id')
     }) 
 };
 

@@ -4,7 +4,7 @@ module.exports = {
 
   development: {
     client: 'pg',
-    connection: 'postgresql://localhost/j_mart_inventory'
+    connection: 'postgresql://localhost/inventory'
   },
 
 
