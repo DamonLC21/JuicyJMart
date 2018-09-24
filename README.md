@@ -1,4 +1,4 @@
-# JuicyJMart
+# JuicyJMart - BackEnd
 ## Proposal: https://docs.google.com/document/d/178COd7QQIqLx5f_F8AiTz_TOXebQzn9x3dgiIi4-GVI/edit?ts=5ba53132
 ### FEF: React
 ### Non Trivial Library: Auto0 login
