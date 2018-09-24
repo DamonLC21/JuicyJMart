@@ -6,8 +6,8 @@ exports.up = function(knex, Promise) {
         item.string('description');
         item.integer('quantity');
         item.float('price');        
-        item.string('image URL');
-        item.iteger('categoryID');
+        item.string('image_URL');
+        item.integer('categoryID');
     }) 
 };
 

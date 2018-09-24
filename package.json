@@ -1,7 +1,7 @@
 {
   "name": "juicyjmart",
   "version": "1.0.0",
-  "description": "juicy jay mart inventoy",
+  "description": "juicy jay mart inventory",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
