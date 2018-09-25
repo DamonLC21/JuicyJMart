@@ -19,7 +19,21 @@ app.get('/', (req, res, next) =>    {
 })
 app.get('/categories', (req, res, next)   =>  {
     queries.listAllCategories().then((data) => {
-        res.json({data});
+        res.json({data}); 
     })
 })  
+app.post('/', (req, res) => {
+    queries.createItem(req.body)
+    .then((data) => {
+        res.json({data});
+    });
+});
+app.put('/:id', (req,res) =>   {
+    queries.updateItem(req.body, req.params.id).then(itemData => res.json({data: itemData}))
+});
+app.delete('/:id', (req, res) => {
+    queries.deleteItem(req.params.id).then((data) =>    {
+        res.json({data})
+    });
+});
 
