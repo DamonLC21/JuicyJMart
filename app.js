@@ -36,4 +36,9 @@ app.delete('/:id', (req, res) => {
         res.json({data})
     });
 });
+app.get('/:id', (req, res, next) => {
+    queries.selectItem(req.params.id).then((data)=> {
+        res.json({data});
+    })
+})
 

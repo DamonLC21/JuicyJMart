@@ -16,6 +16,11 @@ function updateItem(item, id) {
 function deleteItem(id) {
     return knex('items').where('id', id).delete();
 }
+function selectItem(id) {
+    return knex('items').where('categoryID', id);
+}
+
+
 
 
 
@@ -25,5 +30,6 @@ module.exports = {
     listAllCategories,
     createItem,
     updateItem,
-    deleteItem
+    deleteItem,
+    selectItem
 }
